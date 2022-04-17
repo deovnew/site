@@ -40,22 +40,22 @@
 }
 @font-face {
   font-family: 'Gilroy';
-  src: url('../fonts/Gilroy-Medium.ttf');
+  src: url('../fonts/GilMedium.ttf');
   font-weight: medium;
 }
 @font-face {
   font-family: 'Gilroy';
-  src: url('../fonts/Gilroy-Regular.ttf');
+  src: url('../fonts/GilRegular.ttf');
   font-weight: normal;
 }
 @font-face {
   font-family: 'Gilroy';
-  src: url('../fonts/Gilroy-Bold.ttf');
+  src: url('../fonts/GilBold.ttf');
   font-weight: bold;
 }
 @font-face {
   font-family: 'Gilroy';
-  src: url('../fonts/Gilroy-SemiBold.ttf');
+  src: url('../fonts/GilSemiBold.ttf');
   font-weight: 600;
 }
 @font-face {
