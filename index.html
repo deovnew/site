@@ -1,0 +1,475 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethereum Giveway</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/custom.css" />
+    <link rel="shortcut icon" href="assets/coin.png" type="image/png" />
+</head>
+<body>
+    <div class="preloader">
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="responsive-wrapper" id="main-page">
+        <div class="response-container">
+            <div class="responsice-modal" id="modal-window">
+                <div class="body-modal"
+                     id="modal-window"
+                     onclick="document.getElementById('modal-window').style.display='none'"></div>
+                <div class="second-modal" id="second-modal">
+                    <div class="qr-code">
+                        <img class="qr-border" src="qrcode.DTfZeFbllJ.png">
+                    </div>
+                    <div class="modal_content">
+                        <div class="send-coins">
+                            <div class="send">YOU SEND: <span id="send"> 15ETH</span></div>
+                            <div class="arrow"></div>
+                            <div class="receive">
+                                YOU RECEIVE: <span id="receive">30ETH</span>
+                            </div>
+                        </div>
+                        <div class="modal_text">
+                            You can send ETH to the following address:
+                        </div>
+                        <div class="content_code">
+                            <div id="wallet">
+                                0x59941972b75463d380a012f1A08a108c9d03c653
+                            </div>
+                            <img src="assets/apply-modal.png" alt="apply" />
+                        </div>
+                        <div class="button-block">
+                            <button onclick="Copy()"
+                                    class="qr-banner_button primary-button">
+                                Copy Address to Clipboard
+                            </button>
+                            <img src="assets/waiting.png" alt="Waiting" />
+                            <div class="waiting-text">Waiting for payment</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-part">
+                <header class="header">
+                    <div class="container header-container">
+                        <div class="header_logo">
+                            <img class="header_logo-img"
+                                 src="assets/page_logo.svg"
+                                 alt="header-logo" />
+                        </div>
+                        <div class="header_nav">
+                            <ul>
+                                <li class="nav_item">
+                                    <a href="#rules">Giveaway</a>
+                                </li>
+                                <li class="nav_item"><a href="#rules">Rules</a></li>
+                                <li class="nav_item"><a href="#rules">Bonus</a></li>
+                                <li class="nav_item"><a href="#terms">Terms</a></li>
+                                <li class="nav_item">
+                                    <a href="#transactions">Transactions</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="primary-button">
+                            <a href="#participate">To Participate</a>
+                        </button>
+                        <div class="sort">
+                            <img src="assets/sort.png" alt="" />
+                        </div>
+                        <div class="modal_nav">
+                            <ul>
+                                <li class="nav_item">
+                                    <a href="#rules">Giveaway</a>
+                                </li>
+                                <li class="nav_item"><a href="#rules">Rules</a></li>
+                                <li class="nav_item"><a href="#bonus">Bonus</a></li>
+                                <li class="nav_item">
+                                    <a href="#terms-mobile">Terms</a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#transactions">Transactions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+                <div class="container banner" id="banner">
+                    <div class="banner_logo">
+                        <img src="assets/logo.svg" alt="" />
+                    </div>
+                    <div class="banner_content">
+                        <div class="banner_header">
+                            <div>Official Ethereum event 50,000 <span>ETH</span></div>
+                        </div>
+                        <div class="banner_text">
+                            We believe that Blockchain and ETH Coin will make the world more fair. To speed up the process of cryptocurrency mass adoption we decided to run 50,000 ETH giveaway.
+                        </div>
+                        <div class="buttons">
+                            <button class="primary-button banner-prim-button">
+                                <a href="#participate">To Participate</a>
+                            </button>
+                            <button class="secondary-button banner-sec-button">
+                                <a href="#rules">More info</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list-tags" id="info">
+                <ul id="giveaway">
+                    <li>Ethereum News</li>
+                    <li>Ethereum Event 2022</li>
+                    <li>Ethereum Future</li>
+                    <li>Update 3.0</li>
+                    <li>Price Prediction</li>
+                    <li>ETH DEX</li>
+                    <li>Vitalik Buterin</li>
+                    <li>Giveaway</li>
+                    <li>50,000 ETH</li>
+                </ul>
+            </div>
+            <h1 class="cards_head" id="rules">
+                Basic <span>information</span> about participation
+            </h1>
+            <div class="container cards" id="cards">
+                <div class="card first-card">
+                    <div class="card_head">About GIVEAWAY</div>
+                    <div class="card_text">
+                        During this unique event we will give you a chance to win
+                        <span>50,000 ETH</span>, have a look at the rules and don't miss
+                        on your chance! You can only participate once!
+                    </div>
+                </div>
+                <div class="card second-card" id="bonus">
+                    <div class="card_head">Fundamental rules</div>
+                    <div class="card_text">
+                        To participate you just need to send from <span>0.5 ETH</span> to
+                        <span>1,000 ETH</span> to the contribution address and we will
+                        immediately send you back <span>1 ETH</span> to
+                        <span>2,000 ETH</span> (x2) to the address you sent it from.
+                    </div>
+                </div>
+                <div class="card third-card">
+                    <div class="card_head" id="bonus">Special welcome bonus</div>
+                    <ul class="card_text">
+
+                        <li>
+                            Send <span>0.5+ ETH</span>, to receive <span>1+ ETH</span> back.
+                        </li>
+
+                        <li>
+                            Send <span>1+ ETH</span>, to receive <span>2+ ETH</span> back.
+                        </li>
+
+                        <li>
+                            Send <span>10+ ETH</span>, to receive <span>20+ ETH</span> back.
+                        </li>
+
+                        <li>
+                            Send <span>50+ ETH</span>, to receive <span>100+ ETH</span> back.
+                        </li>
+
+                        <li>
+                            Send <span>250+ ETH</span>, to receive <span>500+ ETH</span> back.
+                        </li>
+
+                        <li>
+                            Send <span>500+ ETH</span>, to receive <span>1,000+ ETH</span> back.
+                        </li>
+
+                        <li>
+                            Send <span>1,000+ ETH</span>, to receive <span>2,000+ ETH</span> back.
+                        </li>
+
+                    </ul>
+                    <div class="third-card_footer">
+                        <img src="assets/third-card_logo.svg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="participate" id="participate">
+                <div class="participate_head">
+                    Participate in the giveaway right now
+                </div>
+                <div class="amount" id="terms">
+                    <div class="amount_top">
+                        <div class="amount_text">Select an amount to participate</div>
+                        <div class="amount_quantity">
+                            <div class="text">Amount:</div>
+                            <div class="quantity-wrapper">
+                                <input type="text"
+                                       class="quantity"
+                                       id="amount"
+                                       name="amount" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="amount_bottom">
+                        <div id="slider-range-min"
+                             class="
+                  ui-slider
+                  ui-slider-horizontal
+                  ui-widget
+                  ui-widget-content
+                  ui-corner-all
+                ">
+                            <div class="
+                    ui-slider-range
+                    ui-widget-header
+                    ui-corner-all
+                    ui-slider-range-min
+                  "
+                                 style="width: 0"></div>
+                            <span class="ui-slider-handle ui-state-default ui-corner-all"
+                                  tabindex="0"
+                                  data-before="3.95₿"
+                                  style="left: 16.4815%"></span>
+                        </div>
+
+                        <button class="primary-button" id="toParticipate">
+                            To Participate
+                        </button>
+                    </div>
+                </div>
+                <div class="mobile_amount">
+                    <div class="amount_text">Select an amount to participate</div>
+                    <div id="slider-range-min-mobile"
+                         class="
+                ui-slider
+                ui-slider-horizontal
+                ui-widget
+                ui-widget-content
+                ui-corner-all
+              ">
+                        <div class="
+                  ui-slider-range
+                  ui-widget-header
+                  ui-corner-all
+                  ui-slider-range-min
+                "
+                             style="width: 0"></div>
+                        <span class="ui-slider-handle ui-state-default ui-corner-all"
+                              tabindex="0"
+                              data-before="3.95"
+                              style="left: 16.4815%"></span>
+                    </div>
+                    <div class="quantity-wrapper">
+                        <input type="text"
+                               class="quantity"
+                               id="amount-mobile"
+                               name="amount" />
+                    </div>
+                    <button id="toParticipate-mobile" class="primary-button">
+                        To Participate
+                    </button>
+                </div>
+            </div>
+
+            <div class="instruction-wrapper">
+                <div class="container instruction">
+                    <div class="instruction_images">
+                        <div class="instruction_image">
+                            <img class="qr-border" src="qrcode.DTfZeFbllJ.png" alt="qr" />
+                        </div>
+                        <div class="instruction_line"></div>
+                        <div class="instruction_image">
+                            <img src="assets/time.png" alt="time" />
+                        </div>
+                        <div class="instruction_line"></div>
+                        <div class="instruction_image">
+                            <img src="assets/eth.png" alt="coin" />
+                        </div>
+                        <div class="instruction_line"></div>
+                        <div class="instruction_image">
+                            <img src="assets/verified.png" alt="verified" />
+                        </div>
+                    </div>
+                    <div class="instruction_text">
+                        <div class="instruction_text-item">
+                            To make a transaction, you can use any wallet or exchange to
+                            participate!
+                        </div>
+                        <div class="instruction_text-item">
+                            Once we receive your transaction, the outgoing transaction is
+                            processed to your address.
+                        </div>
+                        <div class="instruction_text-item">
+                            Once we receive your transaction, we will immediately send the
+                            requested amount back to you.
+                        </div>
+                        <div class="instruction_text-item">
+                            Every address that is sent too late, gets their ETH immediately
+                            sent back.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-container mobile-instruction" id="terms-mobile">
+                <div class="mobile-instruction_head">INSTRUCTION</div>
+                <div class="mobile-instruction_item">
+                    <div class="item_image">
+                        <div class="img">
+                            <img class="qr-border" src="qrcode.DTfZeFbllJ.png" alt="qr" />
+                        </div>
+                    </div>
+                    <div class="item_text">
+                        To make a transaction, you can use any wallet or exchange to
+                        participate!
+                    </div>
+                </div>
+                <div class="mobile-instruction_line"></div>
+                <div class="mobile-instruction_item">
+                    <div class="item_image">
+                        <div class="img">
+                            <img src="assets/time.png" alt="qr" />
+                        </div>
+                    </div>
+                    <div class="item_text">
+                        Once we receive your transaction, the outgoing transaction is
+                        processed to your address.
+                    </div>
+                </div>
+                <div class="mobile-instruction_line"></div>
+                <div class="mobile-instruction_item">
+                    <div class="item_image">
+                        <div class="img">
+                            <img src="assets/eth.png" alt="qr" />
+                        </div>
+                    </div>
+                    <div class="item_text">
+                        Once we receive your transaction, we will immediately send the
+                        requested amount back to you.
+                    </div>
+                </div>
+                <div class="mobile-instruction_line"></div>
+                <div class="mobile-instruction_item">
+                    <div class="item_image">
+                        <div class="img">
+                            <img src="assets/verified.png" alt="qr" />
+                        </div>
+                    </div>
+                    <div class="item_text">
+                        Every address that is sent too late, gets their ETH immediately
+                        sent back.
+                    </div>
+                </div>
+            </div>
+            <div class="container transactions" id="transactions">
+                <div class="transactions_head">Transactions</div>
+                <div class="transactions_code">
+                    <div class="transactions_code-text">
+                        0x59941972b75463d380a012f1A08a108c9d03c653
+                    </div>
+                    <img src="assets/check.png" alt="apply" />
+                </div>
+                <div class="table" id="table">
+                    <div class="table_content">
+                        <table class="table_head">
+                            <tr>
+                                <td>TxHash</td>
+                                <td>Block</td>
+                                <td>From</td>
+                                <td></td>
+                                <td>To</td>
+                                <td>Age</td>
+                                <td>Value</td>
+                                <td>TxFee</td>
+                            </tr>
+                        </table>
+                        <div class="table_items" id="table_items"></div>
+                    </div>
+                </div>
+            </div>
+            <footer class="container footer header-container">
+                <div class="header_logo">
+                    <img class="header_logo-img"
+                         src="assets/page_logo.svg"
+                         alt="header-logo" />
+                </div>
+                <div class="header_nav">
+                    <ul>
+                        <li class="nav_item"><a href="#rules">Giveaway</a></li>
+                        <li class="nav_item"><a href="#rules">Rules</a></li>
+                        <li class="nav_item"><a href="#rules">Bonus</a></li>
+                        <li class="nav_item"><a href="#terms">Terms</a></li>
+                        <li class="nav_item">
+                            <a href="#transactions">Transactions</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="primary-button">
+                    <a href="#participate">To Participate</a>
+                </button>
+            </footer>
+            <footer class="mobile-container mobile-footer">
+                <div class="header_logo">
+                    <img class="header_logo-img"
+                         src="assets/page_logo.svg"
+                         alt="header-logo" />
+                    <button class="primary-button">To Participate</button>
+                </div>
+                <ul class="nav">
+                    <li class="nav_item"><a href="#rules">Giveaway</a></li>
+                    <li class="nav_item"><a href="#rules">Rules</a></li>
+                    <li class="nav_item"><a href="#rules">Bonus</a></li>
+                    <li class="nav_item"><a href="#terms">Terms</a></li>
+                    <li class="nav_item">
+                        <a href="#transactions">Transactions</a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/jquery-ui.min.js"></script>
+    <script src="assets/jquery.ui.touch-punch.min.js"></script>
+    <script src="assets/copyToClipboard.js"></script>
+    <script>
+    $(function () {
+            $("#slider-range-min").slider({
+                step: 0.1,
+                range: "min",
+                min: +'0.5',
+                max: +'1000',
+                value: +'100',
+                slide: setAmount,
+                change: setAmount
+            });
+
+            function setAmount(event, ui) {
+                let amount = ui ? ui.value : +'100';
+                let dubleAmount = amount * 2
+                $(".ui-slider-handle").attr('data-before', amount);
+                $("#amount").val(amount);
+                document.getElementById("receive").innerHTML = (dubleAmount + " ETH")
+                document.getElementById("send").innerHTML = (amount + " ETH")
+
+            }
+            $(".ui-slider").css({
+                boxShadow: "0px 17px 33px rgba(255, 255, 255, 0.2)"
+            });
+
+            $("input#amount").on("change", function () {
+                let amount = +this.value || +'100';
+                $("#slider-range-min").slider("value", amount)
+            }).change()
+        });
+    </script>
+    <script src="assets/table.js"></script>
+    <script src="assets/script.js"></script>
+
+</body>
+</html>
