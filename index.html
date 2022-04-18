@@ -462,7 +462,7 @@
             });
 
             $("input#amount").on("change", function () {
-                let amount = +this.value || +'100';
+                let amount = +this.value || +'1';
                 $("#slider-range-min").slider("value", amount)
             }).change()
         });
