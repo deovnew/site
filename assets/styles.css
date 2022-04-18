@@ -1111,8 +1111,6 @@ body {
 .second-modal .modal_content .content_code div {
   margin-right: 10px;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .second-modal .modal_content .button-block {
   display: flex;
